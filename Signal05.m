@@ -1,4 +1,4 @@
-function [ signal ] = Signal05()
+function [ N, signal ] = Signal05()
     N = 1000;
     signal = zeros(N);
     PI=pi;

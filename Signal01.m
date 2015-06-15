@@ -1,4 +1,4 @@
-function [ signal ] = Signal01()
+function [ N, signal ] = Signal01()
     N = 1000;
     signal = zeros(N);
     for (i = 1:199)
