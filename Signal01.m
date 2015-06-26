@@ -1,17 +1,15 @@
 function [ N, signal ] = Signal01()
-    N = 1000;
+    N = 2000;
     signal = zeros(N);
-    for (i = 1:199)
-        signal(i) = 1 * sin((2 * pi * i / 40));
+    for (i = 1:214)
+        signal(i) = 1 * cos((2 * pi * i / 50));
     end
-    for (i = 200:400)
-        signal(i) = 2 * sin((2 * pi * i / 40));
+    for (i = 215:1815)
+        signal(i) = 1 * cos((2 * pi * i * (i - 215) / 72000) + pi);
     end
-    for (i = 400:600)
-        signal(i) = 0;
-    end
-    for (i = 600:800)
-        signal(i) = 1 * sin((2 * pi * i / 20)) + 2 * sin((2 * pi * i / 60));
+    signal(1043) = 2;
+    for (i = 1815:N)
+        signal(i) = 1 * cos(2 * pi * (i - 1815) / 50);
     end
 end
 
