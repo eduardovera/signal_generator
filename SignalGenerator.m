@@ -1,5 +1,9 @@
 function [ signal ] = SignalGenerator( signal_type )
 
+%carrega, plota e retorna um dos 9 sinais 
+%(escolhido por signal_type)
+% Utilizado apenas para testar os sinais
+
     if (signal_type == 1)
         [N, signal] = Signal01();
     end

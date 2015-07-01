@@ -1,4 +1,6 @@
 function [ output ] = generateInternalSignal( x, omega, fourier_transform, signalA)
+%recebe um valor x e um omega, junto com um sinal e sua transformada de
+%fourier e retorna como output a função sintonizada.
 [N, ~] = size(signalA);
 output = zeros(N);
 magnitude = abs(fourier_transform);
